@@ -7,23 +7,31 @@ export default class Navbar extends Component {
             <div className="nav-container">
 
                 {/* Brand */}
-                <div className="brand">
-                    <span className="brand-left">MRP</span> 
-                    <span className="brand-split">|</span> 
-                    <span className="brand-right">T</span>
-                </div>
+                <a className="brand-link" href="/">
+                    <div className="brand">
+                        <span className="brand-left">MRP</span> 
+                        <span className="brand-split">|</span> 
+                        <span className="brand-right">T</span>
+                    </div>
+                </a>
 
                 {/* Navbar Links */}
                 <div className="link-list">
                     <ul className="links">
                         <li>
-                            <a className="link" href="#">Projects</a>
+                            <a className="link" href="#">ABOUT ME</a>
                         </li>
                         <li>
-                            <a className="link" href="#">Blog</a>
+                            <a className="link" href="#">PROJECTS</a>
                         </li>
                         <li>
-                            <a className="link" href="#">Home</a>
+                            <a className="link" href="#">CONNECT WITH ME</a>
+                        </li>
+                        <li>
+                            <a className="link" href="#">CONTACT</a>
+                        </li>
+                        <li>
+                            <a className="link" href="#">RESUME</a>
                         </li>
                     </ul>
                 </div>
