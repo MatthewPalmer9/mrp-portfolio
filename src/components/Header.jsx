@@ -9,7 +9,12 @@ export default class Header extends Component {
                     <div className="main-header">
                         <div className="main-header-content">
                             <div className="main-header-container">
-                                <h1>Hello world</h1>
+                                <h1 className="brand-title"><span className="mrp">MRP</span> <span className="splitter">|</span> <span className="header-technologies">TECHNOLOGIES</span></h1>
+                                <p className="brand-phrase">
+                                    PEOPLE WORK BETTER TOGETHER
+                                </p>
+                                <p className="quote-phrase">The power of one, if fearless and focused, is formidable, but the power of many working together is better.</p>
+                                <p className="quote-owner">-Gloria Macapagal Arroyo</p>
                             </div>
 
                             <div className="main-header-side-content">

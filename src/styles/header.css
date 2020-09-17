@@ -1,5 +1,12 @@
-h1 {
+.brand-phrase {
     color: white;
+    font-size: 2rem;
+    padding: 1rem 0 .8rem;
+}
+
+.quote-phrase, .quote-owner {
+    color: white;
+    font-weight: 500;
 }
 
 .main-header {
@@ -12,9 +19,15 @@ h1 {
 }
 
 .main-header-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     height: 100%;
+}
+
+.main-header-side-content,
+.main-header-container {
+    flex: 1 50%;
+    height: 50%;
+    text-align: left;
 }
 
 .main-header-side-content {
@@ -22,6 +35,24 @@ h1 {
     border-radius: 20px;
 }
 
+.main-header-container {
+    text-align: left;
+    float: left;
+}
+
+.mrp {
+    color: #28f;
+    font-size: 2.5rem;
+}
+
+.splitter {
+    font-size: 2.5rem;
+}
+
+.header-technologies {
+    color: #C9C9C9;
+    font-size: 2.5rem;
+}
 /* Media Queries */
 
 @media only screen and (orientation: landscape) {
@@ -40,7 +71,6 @@ h1 {
         flex: 1 50%;
         margin: 0 auto;
         max-width: 500px;
-        border: 1px solid red;
     }
 
     .nav-container {
@@ -54,11 +84,10 @@ h1 {
     }
 
     .main-header {
-        padding: 19rem 2em 0;
+        padding: 10rem 6em 0;
     }
 
     .main-header-container {
-        display: flex;
         justify-content: space-around;
         margin: 0 auto;
         max-width: 1040px;
