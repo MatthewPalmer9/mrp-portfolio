@@ -18,21 +18,21 @@ export default class Navbar extends Component {
                 {/* Navbar Links */}
                 <div className="link-list">
                     <ul className="links">
-                        <li>
-                            <a className="link" href="#">ABOUT ME</a>
-                        </li>
-                        <li>
-                            <a className="link" href="#">PROJECTS</a>
-                        </li>
-                        <li>
-                            <a className="link" href="#">CONNECT WITH ME</a>
-                        </li>
-                        <li>
-                            <a className="link" href="#">CONTACT</a>
-                        </li>
-                        <li>
-                            <a className="link" href="#">RESUME</a>
-                        </li>
+                        <a className="link" href="#">
+                            <li>ABOUT ME</li>
+                        </a>
+                        <a className="link" href="#">
+                            <li>PROJECTS</li>
+                        </a>
+                        <a className="link" href="#">
+                            <li>CONNECT WITH ME</li>
+                        </a>
+                        <a className="link" href="#">
+                            <li>CONTACT</li>
+                        </a>
+                        <a className="link" href="#">
+                            <li className="link">RESUME</li>
+                        </a>
                     </ul>
                 </div>
             </div>
