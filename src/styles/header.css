@@ -1,6 +1,54 @@
 .main-header {
-    background: url('../stars-bg.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../stars-bg.jpg') center center no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
     height: 100vh;
+    min-height: 300px;
+    text-align: center;
+    padding: 35vh 1em 0;
+}
+
+/* Media Queries */
+
+@media only screen and (orientation: landscape) {
+    .main-header {
+        min-height: 500px;
+        padding-top: 35vh;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .main-header {
+        padding: 24em 2em 0;
+    }
+
+    .main-header-container {
+        flex: 1 50%;
+        margin: 0 auto;
+        max-width: 500px;
+        border: 1px solid red;
+    }
+
+    .nav-container {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .main-header h1 {
+        margin: 0;
+    }
+
+    .main-header {
+        padding: 19rem 2em 0;
+    }
+
+    .main-header-container {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        max-width: 1040px;
+        text-align: left;
+    }
+
+    
 }
