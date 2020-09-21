@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  margin: 0.67em 0;
+  margin: 0.67em;
 }
 
 body, html {
@@ -30,7 +30,17 @@ body {
   background-color: #232323;
 }
 
-body::-webkit-scrollbar {}
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #1880f8;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
