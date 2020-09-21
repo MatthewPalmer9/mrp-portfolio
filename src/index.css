@@ -30,6 +30,8 @@ body {
   background-color: #232323;
 }
 
+body::-webkit-scrollbar {}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

@@ -13,7 +13,7 @@ export default class Header extends Component {
                                 <p className="brand-phrase">
                                     PEOPLE WORK BETTER TOGETHER
                                 </p>
-                                <p className="quote-phrase">The power of one, if fearless and focused, is formidable, but the power of many working together is better.</p>
+                                <p className="quote-phrase"><em>"The power of one, if fearless and focused, is formidable, but the power of many working together is better."</em></p>
                                 <p className="quote-owner">-Gloria Macapagal Arroyo</p>
                             </div>
 
