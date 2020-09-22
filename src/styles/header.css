@@ -10,10 +10,6 @@
     line-height: 1.5;
 }
 
-.main {
-    margin-left: 5rem;
-}
-
 .main-header {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../stars-bg.jpg') center center no-repeat;
     background-size: cover;
