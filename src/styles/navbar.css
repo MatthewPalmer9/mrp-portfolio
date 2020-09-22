@@ -103,7 +103,7 @@ i {
 /* Small Screens */
 @media only screen and (max-width: 600px) {
     .navbar {
-        bottom: 0;
+        top: 0;
         width: 100vw;
         height: 5rem;
         overflow: scroll;
