@@ -23,7 +23,7 @@
 
 .mrp {
     color: #28f;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .splitter {
@@ -32,14 +32,15 @@
 
 .header-technologies {
     color: #C9C9C9;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .brand-phrase {
     color: white;
+    width: 100%;
     font-size: 2rem;
     font-weight: bold;
-    padding: 1rem 0 1rem;
+    padding: .5rem 0 .5rem;
 }
 
 .brand-title {
@@ -70,6 +71,8 @@
     width: 50%;
     background: rgba(0, 0, 0, 0.4);
     grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
 }
         .main-header-side-content h3 {
             font-size: 1.5rem;
@@ -104,7 +107,8 @@
 /* Slightly Smaller-than-desktop Screens */
 @media only screen and (max-width: 1200px) {
     .main-header-container {
-        padding: 5vh 1.5em 0;
+        padding: 2vh 1em 0;
+        grid-gap: 5px;
         flex-direction: column;
         align-content: center;
         justify-content: center;
@@ -112,13 +116,22 @@
 
     .main-header-content {
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        height: 40%;
+        height: 35%;
+        letter-spacing: 2px;
         width: 90vw;
         text-align: center;
+        align-items: center;
     }
+            .main-header-content h1 {
+                padding: 0;
+            }
+
+            .main-header-content p {
+                padding: 0;
+            }
 
     .brand-phrase {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
 
     .main-header-side-content {
