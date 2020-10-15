@@ -1,14 +1,12 @@
 import React from 'react';
-import Navbar from './components/Navbar';
 import Header from './components/Header';
-import Projects from './components/Projects';
+import Menu from './components/Menu';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
       <Header />
-      <Projects />
+      <Menu />
     </div>
   );
 }

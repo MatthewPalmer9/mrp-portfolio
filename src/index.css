@@ -1,35 +1,26 @@
+/* Root Parameters */
+:root {
+  font-size: 16px;
+}
+
+/* Setting box-sixing properties and margin properties */
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: white;
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 1.1;
-  padding: 1.5rem 0 .8rem 0;
+a {
+  text-decoration: none;
 }
 
-h1 {
-  margin: 0.67em;
-}
-
-body, html {
-  font-family: 'Alegreya Sans', sans-serif;
-}
-
+/* Fixes the font sharpness across the application */
 body {
-  margin: 0;
-  line-height: 1.5rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #232323;
 }
 
+/* Scrollbar Styles */
 body::-webkit-scrollbar {
   width: 0.25rem;
 }
@@ -42,8 +33,112 @@ body::-webkit-scrollbar-thumb {
   background: #1880f8;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h3 {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+
+/* Header Properties */
+h1 span:nth-child(1) {
+  color: rgb(37, 124, 255);
+}
+
+h1 span:nth-child(2) {
+  color: lightgrey;
+}
+
+.header-container {
+  display: grid;
+  position: absolute;
+  z-index: 100;
+  grid-template-rows: 1fr 1fr 1fr;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./stars-bg.jpg') center center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  width: 100vw;
+  height: 200px;
+  background-color: grey;
+  border-bottom-right-radius: 80%;
+  border-bottom-left-radius: 80%;
+}
+
+
+.header-container h1 {
+  display: grid;
+  position: relative;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: .5em;
+  top: 20px;
+  left: 0%;
+}
+    .header-container h1 a {
+      color: white;
+      font-size: 3em;
+    }
+
+.header-container h3 {
+  display: grid;
+  color: white;
+  bottom: 25px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 1.2rem;
+}
+
+.menu-btn {
+  display: grid;
+  position: relative;
+  bottom: 20px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100px;
+  margin: 0 auto;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-container {
+  position: relative;
+  transition: 600ms;
+  display: none;
+  top: 20px;
+  left: 0;
+  margin: auto auto;
+  width: 80vw;
+  height: 50vh;
+  z-index: 200;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/* Media Queries */
+/* --------------------------- */
+
+
+/* Small Screen */
+@media screen and (max-width: 768px) {
+
+}
+
+/* Medium Screen */
+@media screen and (min-width: 1024px) {
+  
+}
+
+/* Medium Screen */
+@media screen and (min-width: 1200px) {
+  
+}
+
+/* Medium Screen */
+@media screen and (min-width: 1600px) {
+  
 }
 
