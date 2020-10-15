@@ -51,6 +51,7 @@ h1 span:nth-child(2) {
 
 .header-container {
   display: grid;
+  transition: 600ms;
   position: absolute;
   z-index: 100;
   grid-template-rows: 1fr 1fr 1fr;
