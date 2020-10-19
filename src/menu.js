@@ -8,7 +8,7 @@ function menuScript() {
         event.stopImmediatePropagation()
 
         if(hiddenMenu.style.display = "none") {
-            hiddenMenu.style.display = "block";
+            hiddenMenu.style.display = "grid";
             container.style.filter = "blur(3px)";
             setTimeout(() => {
                 root.addEventListener('click', () => {
